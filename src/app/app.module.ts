@@ -21,6 +21,7 @@ import {FormControl, Validators, FormsModule, ReactiveFormsModule} from '@angula
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {merge} from 'rxjs';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {merge} from 'rxjs';
     MatToolbarModule,
     MatButtonModule,
     RouterModule,
-    MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule
+    MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule, 
+    HttpClientModule
   ],
   providers: [
     provideAnimationsAsync()
