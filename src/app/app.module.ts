@@ -15,6 +15,12 @@ import { RegisterComponent } from './pages/register/register.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RouterModule } from '@angular/router';
+import {Component} from '@angular/core';
+import {takeUntilDestroyed} from '@angular/core/rxjs-interop';
+import {FormControl, Validators, FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {merge} from 'rxjs';
 
 @NgModule({
   declarations: [
@@ -31,7 +37,8 @@ import { RouterModule } from '@angular/router';
     MatIconModule,
     MatToolbarModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
+    MatFormFieldModule, MatInputModule, FormsModule, ReactiveFormsModule
   ],
   providers: [
     provideAnimationsAsync()
